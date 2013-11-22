@@ -266,7 +266,7 @@ class EasyContactFormsApplicationSettings extends EasyContactFormsBase {
 		if (!isset($obj)) {
 			$obj = new EasyContactFormsApplicationSettings();
 
-			$obj->selectstmt = "SELECT id, UseTinyMCE, ApplicationWidth, ApplicationWidth2, FixJSLoading, FormCompletionMinTime, FormCompletionMaxTime, FixStatus0, InitTime, ShowPoweredBy, FixStatus02, w3cCompliant, FixJSLoading2, AllowMarkupInEntries, SkipWeeklyReport, FileFolder, PhoneRegEx FROM " . $obj->getTableName() . " WHERE id = :id";
+			$obj->selectstmt = "SELECT id, UseTinyMCE, ApplicationWidth, ApplicationWidth2, FixJSLoading, FormCompletionMinTime, FormCompletionMaxTime, FixStatus0, InitTime, ShowPoweredBy, FixStatus02, w3cCompliant, FixJSLoading2, AllowMarkupInEntries, SkipWeeklyReport, FileFolder, ProductVersion, PhoneRegEx FROM " . $obj->getTableName() . " WHERE id = :id";
 
 			$obj->fields = $obj->getObjectData(1);
 			$needssave = FALSE;

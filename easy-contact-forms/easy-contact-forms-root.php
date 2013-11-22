@@ -511,19 +511,22 @@ class EasyContactFormsRoot {
 	 * 	Depends on the api call type
 	 */
 	function api($action, $args, $unserialize = TRUE, $silent = FALSE) {
+
+		require_once 'easy-contact-forms-applicationsettings.php';
+		$as = EasyContactFormsApplicationSettings::getInstance();
 		global $wp_version;
 		if (is_array($args)) {
 			$args['slug'] = 'easy-contact-forms';
+			$args['productVersion'] = $as->get('ProductVersion');
 		}
 		if (is_object($args)) {
 			$args->slug = 'easy-contact-forms';
+			$args->productVersion = $as->get('ProductVersion');
 		}
 		$body = array();
 		$body['apiaction'] = $action;
 		$body['request'] = serialize($args);
 		$body['site'] = get_bloginfo('url');
-		require_once 'easy-contact-forms-applicationsettings.php';
-		$as = EasyContactFormsApplicationSettings::getInstance();
 
 		$request = array(
 			'body' => $body,

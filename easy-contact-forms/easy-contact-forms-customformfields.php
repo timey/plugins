@@ -556,8 +556,6 @@ class EasyContactFormsCustomFormFields extends EasyContactFormsBase {
 
 		EasyContactFormsCustomFormFields::getSettingsFormButton('ufo-form-t-introduction', EasyContactFormsT::get('CF_TutorialsIntroduction'), "onclick='window.open(\"http://championforms.com/champion-forms-getting-started/view\")'", 'icon_video_tutorial');
 
-		EasyContactFormsCustomFormFields::getSettingsFormButton('ufo-form-t-field-settings', EasyContactFormsT::get('CF_TutorialsFieldSettings'), "onclick='window.open(\"http://championforms.com/champion-forms-field-settings/view\")'", 'icon_video_tutorial');
-
 		EasyContactFormsCustomFormFields::getSettingsFormButton('ufo-form-t-styling', EasyContactFormsT::get('CF_TutorialsStyling'), "onclick='window.open(\"http://championforms.com/champion-forms-styling/view\")'", 'icon_video_tutorial');
 
 		EasyContactFormsCustomFormFields::getSettingsFormButton('ufo-form-t-client-data-collection', EasyContactFormsT::get('CF_TutorialsClientDataCollection'), "onclick='window.open(\"http://championforms.com/champion-forms-client-data-collection/view\")'", 'icon_video_tutorial');
@@ -568,7 +566,7 @@ class EasyContactFormsCustomFormFields extends EasyContactFormsBase {
 		$toolbar .= '</div>';
 		$list = $toolbar . $list;
 
-		$list = '<link href="' . EASYCONTACTFORMS__engineWebAppDirectory . '/forms/fldcons/fldcons.1.4.8.css" rel="stylesheet" type="text/css"/>'  . $list ;
+		$list = '<link href="' . EASYCONTACTFORMS__engineWebAppDirectory . '/forms/fldcons/fldcons.1.4.9.css" rel="stylesheet" type="text/css"/>'  . $list ;
 
 		echo $list;
 

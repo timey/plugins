@@ -2,7 +2,7 @@
 /*
 Plugin Name: Easy Contact Forms
 Plugin URI: http://easy-contact-forms.com 
-Version: 1.4.8
+Version: 1.4.9
 Author: ChampionForms.com
 Author URI: http://championforms.com
 Description: Easy Contact Forms. Easy to create. Easy to fill out. Easy to change. Easy to manage. Easy to protect	
@@ -47,7 +47,7 @@ if ( isset($easycontactforms) && function_exists('register_activation_hook') ){
 } 
 function easycontactforms_update_db_check() {
 
-	$db_version = '1.4.8';
+	$db_version = '1.4.9';
 	require_once 'easy-contact-forms-root.php'; 		
 	require_once 'easy-contact-forms-applicationsettings.php'; 		
 	$as = EasyContactFormsApplicationSettings::getInstance();
@@ -345,10 +345,10 @@ function easycontactforms_formentrypoint($map) {
 	$js = '';
 	$as = EasyContactFormsApplicationSettings::getInstance();
 	if (!$as->get('FixJSLoading')) {
-		wp_enqueue_script('ufoforms', plugins_url('easy-contact-forms-forms.1.4.8.js', __FILE__));
+		wp_enqueue_script('ufoforms', plugins_url('easy-contact-forms-forms.1.4.9.js', __FILE__));
 	} else {
 
-		$js .= '<script type="text/javascript" src="' . plugins_url('easy-contact-forms-forms.1.4.8.js', __FILE__) . '"></script>';
+		$js .= '<script type="text/javascript" src="' . plugins_url('easy-contact-forms-forms.1.4.9.js', __FILE__) . '"></script>';
 
 	}
 	if ($as->get('FixJSLoading2')) {
@@ -469,7 +469,7 @@ function easycontactforms_entrypoint() {
 	wp_enqueue_script('jquery-ui-mouse');
 	wp_enqueue_script('jquery-ui-sortable');
 
-	wp_enqueue_style('easy-contact-forms-admin-ui-css','http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/smoothness/jquery-ui.css',false,'1.4.8',false);
+	wp_enqueue_style('easy-contact-forms-admin-ui-css','http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/smoothness/jquery-ui.css',false,'1.4.9',false);
 
 	wp_enqueue_script('jquery-ui-draggable');
 	wp_enqueue_script('jquery-ui-position');
@@ -477,7 +477,7 @@ function easycontactforms_entrypoint() {
 	wp_enqueue_script('jquery-ui-dialog');
 
 	wp_enqueue_script('json-json', plugins_url('js/json.js', __FILE__));
-	wp_enqueue_script('easy-contact-forms-html', plugins_url('easy-contact-formshtml.1.4.8.js', __FILE__));
+	wp_enqueue_script('easy-contact-forms-html', plugins_url('easy-contact-formshtml.1.4.9.js', __FILE__));
 	wp_enqueue_script('jqui-scrollto', plugins_url('js/jqui/scrollto.js', __FILE__));
 	wp_enqueue_script('js-as', plugins_url('js/as.js', __FILE__));
 

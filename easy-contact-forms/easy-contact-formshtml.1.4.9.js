@@ -1333,7 +1333,7 @@ ufoForms = new function(){
 		if (resp.status == 1) {
 			function redirect(){
 				if (resp.url) {
-					var t = setTimeout('document.location.href = "' + resp.url + '"',messageDelay);
+					var t = setTimeout('window.location.href = "' + resp.url + '"',messageDelay);
 				}
 			}
 			function success() {
@@ -2253,7 +2253,7 @@ ufo.api = function(action, args){
 	config.m2 = action;
 	config.ac=1;
 	if (args.args) {
-		config.a =  args.args;
+		config.a =  AppMan.JSON.encode(args.args);
 	}
 	var ajx = {};
 	ajx.url = ajaxurl;
@@ -2463,6 +2463,32 @@ ufo.fixOrder = function(config) {
 	config.t = 'CustomFormFields';
 	config.m = 'fixOrder';
 	AppMan.Filter.filter(config);
+};
+
+ufo.getAvailableTemplates = function() {
+	config = AppMan.Utils.getConfig('CustomForms');
+	config.m = 'getAvailableTemplates';
+	ufoCf.direct(config, 'AvailableTemplates', true);
+};
+
+ufo.installTemplate = function(args) {
+	config = AppMan.Utils.getConfig({});
+	config.t = 'CustomForms';
+	config.m = 'installTemplate';
+	config.a = args;
+	if (args.inpid) {
+		config.a.key = jQuery('#'+args.inpid).val();
+	}
+	var ajx = {};
+	ajx.params = config;
+	ajx.success = function(data) {
+		data = AppMan.JSON.decode(data);
+		alert(data.message);
+		AppMan.enableInput();
+	};
+	AppMan.disableInput();
+	AppMan.Ajax.request(ajx);
+
 };
 
 /* dashboard api */

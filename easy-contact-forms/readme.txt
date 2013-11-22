@@ -4,7 +4,7 @@ Donate link: http://easy-contact-forms.com
 Tags: contact form, contact form plugin, contact forms, contact form builder, form builder, contact us, feedback form, web form, form
 Requires at least: 3.3
 Tested up to: 3.7.1
-Stable tag: 1.4.8
+Stable tag: 1.4.9
 
 Easy Contact Forms is a simple solution for those who need comprehensive contact forms to run business.
 
@@ -620,6 +620,10 @@ In order to change everything back, please uncheck the the Run in w3c compliant 
 1. Contact Form Field Setting Tab
 
 == Changelog ==
+
+= Easy Contact Forms. 1.4.9 =
+* Several contact form back-endminor defets fixed.
+* Temlates are added.
 
 = Easy Contact Forms. 1.4.8 =
 * Back end apostrophe problem is fixed

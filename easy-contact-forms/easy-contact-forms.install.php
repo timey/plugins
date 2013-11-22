@@ -416,7 +416,37 @@ function easycontactforms_install_data() {
 
 	$rows = array(
 		array(
-			'id' => 622,
+			'id' => 3315,
+			'Description' => 'Please fill in the fields below',
+			'Type' => 2,
+			'Settings' => '<?xml version="1.0"?>
+<form>
+  
+  
+  <LabelTagName>h3</LabelTagName>
+  <Advanced/>
+  <LabelCSSClass/>
+  <LabelCSSStyle/>
+  <ShowDescription>off</ShowDescription>
+  <Description/>
+  <DescriptionPosition>top</DescriptionPosition>
+  <DescriptionCSSClass>ufo-customfields-container-description</DescriptionCSSClass>
+  <DescriptionCSSStyle/>
+  <SetStyle>off</SetStyle>
+  <CSSClass/>
+  <CSSStyle/>
+  <AddCF>off</AddCF>
+  <SetSize>off</SetSize>
+  <Width>230</Width>
+  <WidthUnit>px</WidthUnit>
+<ShowLabel><![CDATA[off]]></ShowLabel><Label><![CDATA[Please fill in the fields below]]></Label></form>',
+			'Template' => '<field><Container containertag="div" addcf="off"><![CDATA[<div>]]></Container></field>',
+			'ListPosition' => 3315,
+			'CustomForms' => 1,
+			'FieldSet' => 3315,
+		),
+		array(
+			'id' => 3316,
 			'Description' => 'Section',
 			'Type' => 2,
 			'Settings' => '<?xml version="1.0"?>
@@ -443,67 +473,12 @@ function easycontactforms_install_data() {
     <Container containertag="div" addcf="off"><![CDATA[<div>
      ]]></Container>
 </field>',
-			'ListPosition' => 625,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
+			'ListPosition' => 3316,
+			'CustomForms' => 1,
+			'FieldSet' => 3316,
 		),
 		array(
-			'id' => 625,
-			'Description' => 'Email',
-			'Type' => 5,
-			'Settings' => '<?xml version="1.0"?>
-<form>
-  
-  <Label>Email</Label>
-  
-  <Advanced/>
-  <LabelCSSClass/>
-  <LabelCSSStyle/>
-  <ShowDescription>off</ShowDescription>
-  <Description/>
-  <DescriptionPosition>bottom</DescriptionPosition>
-  <DescriptionCSSClass>ufo-customfields-field-description</DescriptionCSSClass>
-  <DescriptionCSSStyle/>
-  <SetDefaultValue>off</SetDefaultValue>
-  <DefaultValue>Your email</DefaultValue>
-  <IsBlankValue>on</IsBlankValue>
-  <DefaultValueCSSClass/>
-  <Required>on</Required>
-  <RequiredMessage>Please enter you email</RequiredMessage>
-  
-  <SetRequiredSuffix>on</SetRequiredSuffix>
-  <RequiredSuffix>*</RequiredSuffix>
-  <RequiredSuffixCSSClass>ufo-customfields-required-suffix</RequiredSuffixCSSClass>
-  <RequiredSuffixCSSStyle/>
-  
-  <InvalidCSSClass/>
-  <RequiredMessageCSSClass/>
-  <RequiredMessageCSSStyle/>
-  <Validate>on</Validate>
-  
-  <ValidMessageAbsolutePosition>on</ValidMessageAbsolutePosition>
-  <ValidMessage/>
-  <ValidMessagePosition>right</ValidMessagePosition>
-  <ValidCSSClass/>
-  <ValidCSSStyle/>
-  <SetStyle>off</SetStyle>
-  <CSSClass/>
-  <CSSStyle/>
-  <RowCSSClass/>
-  <SetSize>off</SetSize>
-  <Width>230</Width>
-  <WidthUnit>px</WidthUnit>
-  
-  
-  
-<LinkToAppField><![CDATA[Users_email]]></LinkToAppField><SetValidMessage><![CDATA[on]]></SetValidMessage><AbsolutePosition><![CDATA[on]]></AbsolutePosition><SetContactOptions><![CDATA[on]]></SetContactOptions><LabelPosition><![CDATA[left-align-left]]></LabelPosition><RequiredMessagePosition><![CDATA[right]]></RequiredMessagePosition><RegistredUsersOptions><![CDATA[showfill]]></RegistredUsersOptions><ShowLabel><![CDATA[on]]></ShowLabel></form>',
-			'Template' => '<field><ShowLabel position="left"><![CDATA[<label for=\'ufo-field-id-625\'  style=\'text-align:left\'>Email<span class=\'ufo-customfields-required-suffix\'>*</span></label>]]></ShowLabel><RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-625-invalid\'  style=\'display:none\'></div>]]></RequiredMessage><ValidMessage position="right"><![CDATA[<div id=\'ufo-field-id-625-valid\'  style=\'display:none\'></div>]]></ValidMessage><Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","email"]},"Required":true,"Validate":true,"showValid":true,"ValidMessageAbsolutePosition":true,"ValidMessagePosition":"right","RequiredMessage":"Please enter you email","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-625","form":"ufo-form-id-2"});</script>]]></Validation><Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-625\' value=\'{id-625}\' name=\'id-625\' >]]></Input></field>',
-			'ListPosition' => 648,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
-		),
-		array(
-			'id' => 627,
+			'id' => 3318,
 			'Description' => 'First name',
 			'Type' => 4,
 			'Settings' => '<?xml version="1.0"?>
@@ -538,7 +513,7 @@ function easycontactforms_install_data() {
   
   
   
-  <ValidMessageAbsolutePosition>on</ValidMessageAbsolutePosition>
+  
   <ValidMessage/>
   <ValidMessagePosition>right</ValidMessagePosition>
   <ValidCSSClass/>
@@ -553,58 +528,14 @@ function easycontactforms_install_data() {
   
   
   
-<Required><![CDATA[on]]></Required><Validate><![CDATA[on]]></Validate><LinkToAppField><![CDATA[Users_Name]]></LinkToAppField><Label><![CDATA[First name]]></Label><SetValidMessage><![CDATA[on]]></SetValidMessage><AbsolutePosition><![CDATA[on]]></AbsolutePosition><SetContactOptions><![CDATA[on]]></SetContactOptions><MinLength><![CDATA[2]]></MinLength><MaxLength><![CDATA[45]]></MaxLength><RequiredMessagePosition><![CDATA[right]]></RequiredMessagePosition><RequiredMessage><![CDATA[Your first name is required (from 2 to 45 characters)]]></RequiredMessage><LabelPosition><![CDATA[left-align-left]]></LabelPosition><RegistredUsersOptions><![CDATA[showfill]]></RegistredUsersOptions><ShowLabel><![CDATA[on]]></ShowLabel></form>',
-			'Template' => '<field>
-      <ShowLabel position="left"><![CDATA[
-   <label for=\'ufo-field-id-627\'  style=\'text-align:left\'>
-     First name         <span class=\'ufo-customfields-required-suffix\'>
-           *         </span>
-            </label>]]></ShowLabel>
-          <RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-627-invalid\'  style=\'display:none\'></div>]]></RequiredMessage>
-        <ValidMessage position="right"><![CDATA[<div id=\'ufo-field-id-627-valid\'  style=\'display:none\'>
-        </div>]]></ValidMessage>
-        <Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","minmax"]},"Required":true,"Validate":true,"showValid":true,"ValidMessageAbsolutePosition":true,"ValidMessagePosition":"right","RequiredMessage":"Your first name is required (from 2 to 45 characters)","AbsolutePosition":true,"RequiredMessagePosition":"right","min":"2","max":"45","id":"ufo-field-id-627","form":"ufo-form-id-2"});</script>]]></Validation>
-    <Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-627\' value=\'{id-627}\' name=\'id-627\' >]]></Input>
-</field>',
-			'ListPosition' => 643,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
+<Required><![CDATA[on]]></Required><Label><![CDATA[First name]]></Label><AbsolutePosition><![CDATA[on]]></AbsolutePosition><RequiredMessagePosition><![CDATA[right]]></RequiredMessagePosition><LabelPosition><![CDATA[left-align-left]]></LabelPosition><ShowLabel><![CDATA[on]]></ShowLabel><Validate><![CDATA[off]]></Validate><MinLength><![CDATA[0]]></MinLength><MaxLength><![CDATA[0]]></MaxLength><SetContactOptions><![CDATA[off]]></SetContactOptions><RegistredUsersOptions><![CDATA[none]]></RegistredUsersOptions><LinkToAppField><![CDATA[]]></LinkToAppField><RequiredMessage><![CDATA[This field is required]]></RequiredMessage><SetValidMessage><![CDATA[off]]></SetValidMessage><ValidMessageAbsolutePosition><![CDATA[off]]></ValidMessageAbsolutePosition></form>',
+			'Template' => '<field><ShowLabel position="left"><![CDATA[<label for=\'ufo-field-id-3318\'  style=\'text-align:left\'>First name<span class=\'ufo-customfields-required-suffix\'>*</span></label>]]></ShowLabel><RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-3318-invalid\'  style=\'display:none\'></div>]]></RequiredMessage><Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3318","form":"ufo-form-id-1"});</script>]]></Validation><Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-3318\' value=\'{id-3318}\' name=\'id-3318\' />]]></Input></field>',
+			'ListPosition' => 3318,
+			'CustomForms' => 1,
+			'FieldSet' => 3316,
 		),
 		array(
-			'id' => 630,
-			'Description' => 'Submit',
-			'Type' => 6,
-			'Settings' => '<?xml version="1.0"?>
-<form>
-  
-  
-  
-  <Advanced/>
-  <LabelCSSClass/>
-  <LabelCSSStyle/>
-  <SetStyle>off</SetStyle>
-  <CSSClass/>
-  <CSSStyle/>
-  <RowCSSClass/>
-  
-  <Width>100</Width>
-  <WidthUnit>px</WidthUnit>
-<Label><![CDATA[Submit]]></Label><InputPosition><![CDATA[left]]></InputPosition><ShowLabel><![CDATA[on]]></ShowLabel><SetSize><![CDATA[off]]></SetSize></form>',
-			'Template' => '<field>
-    <Validation><![CDATA[<script type=\'text/javascript\'>var c = {};c.id = \'ufo-field-id-630\';c.form = \'ufo-form-id-2\';c.Label = \'Submit\';ufoFormsConfig.submits.push(c);</script>]]></Validation>
-  <Input><![CDATA[<span id=\'ufo-field-id-630-span\'>
-                 <noscript>
-          <button type=\'submit\' id=\'ufo-field-id-630\' name=\'id-630\' >
-       Submit     </button>
-            </noscript>
-        </span>]]></Input>
-</field>',
-			'ListPosition' => 675,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
-		),
-		array(
-			'id' => 647,
+			'id' => 3319,
 			'Description' => 'Last name',
 			'Type' => 4,
 			'Settings' => '<?xml version="1.0"?>
@@ -639,7 +570,7 @@ function easycontactforms_install_data() {
   
   
   
-  <ValidMessageAbsolutePosition>on</ValidMessageAbsolutePosition>
+  
   <ValidMessage/>
   <ValidMessagePosition>right</ValidMessagePosition>
   <ValidCSSClass/>
@@ -654,25 +585,69 @@ function easycontactforms_install_data() {
   
   
   
-<Label><![CDATA[Last name]]></Label><Required><![CDATA[on]]></Required><Validate><![CDATA[on]]></Validate><SetValidMessage><![CDATA[on]]></SetValidMessage><AbsolutePosition><![CDATA[on]]></AbsolutePosition><LinkToAppField><![CDATA[Users_Description]]></LinkToAppField><SetContactOptions><![CDATA[on]]></SetContactOptions><MinLength><![CDATA[2]]></MinLength><MaxLength><![CDATA[45]]></MaxLength><RequiredMessage><![CDATA[Your last name is required (from 2 to 45 characters)]]></RequiredMessage><RequiredMessagePosition><![CDATA[right]]></RequiredMessagePosition><RegistredUsersOptions><![CDATA[showfill]]></RegistredUsersOptions><ShowLabel><![CDATA[on]]></ShowLabel></form>',
-			'Template' => '<field>
-      <ShowLabel position="left"><![CDATA[
-   <label for=\'ufo-field-id-647\'  style=\'text-align:left\'>
-     Last name         <span class=\'ufo-customfields-required-suffix\'>
-           *         </span>
-            </label>]]></ShowLabel>
-          <RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-647-invalid\'  style=\'display:none\'></div>]]></RequiredMessage>
-        <ValidMessage position="right"><![CDATA[<div id=\'ufo-field-id-647-valid\'  style=\'display:none\'>
-        </div>]]></ValidMessage>
-        <Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","minmax"]},"Required":true,"Validate":true,"showValid":true,"ValidMessageAbsolutePosition":true,"ValidMessagePosition":"right","RequiredMessage":"Your last name is required (from 2 to 45 characters)","AbsolutePosition":true,"RequiredMessagePosition":"right","min":"2","max":"45","id":"ufo-field-id-647","form":"ufo-form-id-2"});</script>]]></Validation>
-    <Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-647\' value=\'{id-647}\' name=\'id-647\' >]]></Input>
-</field>',
-			'ListPosition' => 647,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
+<Label><![CDATA[Last name]]></Label><Required><![CDATA[on]]></Required><AbsolutePosition><![CDATA[on]]></AbsolutePosition><RequiredMessagePosition><![CDATA[right]]></RequiredMessagePosition><ShowLabel><![CDATA[on]]></ShowLabel><Validate><![CDATA[off]]></Validate><MinLength><![CDATA[0]]></MinLength><MaxLength><![CDATA[0]]></MaxLength><SetContactOptions><![CDATA[off]]></SetContactOptions><RegistredUsersOptions><![CDATA[none]]></RegistredUsersOptions><LinkToAppField><![CDATA[]]></LinkToAppField><RequiredMessage><![CDATA[This field is required]]></RequiredMessage><SetValidMessage><![CDATA[off]]></SetValidMessage><ValidMessageAbsolutePosition><![CDATA[off]]></ValidMessageAbsolutePosition></form>',
+			'Template' => '<field><ShowLabel position="left"><![CDATA[<label for=\'ufo-field-id-3319\'  style=\'text-align:left\'>Last name<span class=\'ufo-customfields-required-suffix\'>*</span></label>]]></ShowLabel><RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-3319-invalid\'  style=\'display:none\'></div>]]></RequiredMessage><Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3319","form":"ufo-form-id-1"});</script>]]></Validation><Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-3319\' value=\'{id-3319}\' name=\'id-3319\' />]]></Input></field>',
+			'ListPosition' => 3319,
+			'CustomForms' => 1,
+			'FieldSet' => 3316,
 		),
 		array(
-			'id' => 648,
+			'id' => 3320,
+			'Description' => 'Email',
+			'Type' => 5,
+			'Settings' => '<?xml version="1.0"?>
+<form>
+  
+  <Label>Email</Label>
+  
+  <Advanced/>
+  <LabelCSSClass/>
+  <LabelCSSStyle/>
+  <ShowDescription>off</ShowDescription>
+  <Description/>
+  <DescriptionPosition>bottom</DescriptionPosition>
+  <DescriptionCSSClass>ufo-customfields-field-description</DescriptionCSSClass>
+  <DescriptionCSSStyle/>
+  <SetDefaultValue>off</SetDefaultValue>
+  <DefaultValue>Your email</DefaultValue>
+  <IsBlankValue>on</IsBlankValue>
+  <DefaultValueCSSClass/>
+  <Required>on</Required>
+  <RequiredMessage>Please enter you email</RequiredMessage>
+  
+  <SetRequiredSuffix>on</SetRequiredSuffix>
+  <RequiredSuffix>*</RequiredSuffix>
+  <RequiredSuffixCSSClass>ufo-customfields-required-suffix</RequiredSuffixCSSClass>
+  <RequiredSuffixCSSStyle/>
+  
+  <InvalidCSSClass/>
+  <RequiredMessageCSSClass/>
+  <RequiredMessageCSSStyle/>
+  <Validate>on</Validate>
+  
+  
+  <ValidMessage/>
+  <ValidMessagePosition>right</ValidMessagePosition>
+  <ValidCSSClass/>
+  <ValidCSSStyle/>
+  <SetStyle>off</SetStyle>
+  <CSSClass/>
+  <CSSStyle/>
+  <RowCSSClass/>
+  <SetSize>off</SetSize>
+  <Width>230</Width>
+  <WidthUnit>px</WidthUnit>
+  
+  
+  
+<AbsolutePosition><![CDATA[on]]></AbsolutePosition><LabelPosition><![CDATA[left-align-left]]></LabelPosition><RequiredMessagePosition><![CDATA[right]]></RequiredMessagePosition><ShowLabel><![CDATA[on]]></ShowLabel><RegistredUsersOptions><![CDATA[none]]></RegistredUsersOptions><LinkToAppField><![CDATA[]]></LinkToAppField><SetContactOptions><![CDATA[off]]></SetContactOptions><SetValidMessage><![CDATA[off]]></SetValidMessage><ValidMessageAbsolutePosition><![CDATA[off]]></ValidMessageAbsolutePosition></form>',
+			'Template' => '<field><ShowLabel position="left"><![CDATA[<label for=\'ufo-field-id-3320\'  style=\'text-align:left\'>Email<span class=\'ufo-customfields-required-suffix\'>*</span></label>]]></ShowLabel><RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-3320-invalid\'  style=\'display:none\'></div>]]></RequiredMessage><Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","email"]},"Required":true,"Validate":true,"RequiredMessage":"Please enter you email","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3320","form":"ufo-form-id-1"});</script>]]></Validation><Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-3320\' value=\'{id-3320}\' name=\'id-3320\' />]]></Input></field>',
+			'ListPosition' => 3320,
+			'CustomForms' => 1,
+			'FieldSet' => 3316,
+		),
+		array(
+			'id' => 3321,
 			'Description' => 'Your request',
 			'Type' => 10,
 			'Settings' => '<?xml version="1.0"?>
@@ -706,8 +681,8 @@ function easycontactforms_install_data() {
   <Validate>off</Validate>
   <MinLength/>
   <MaxLength/>
-  <SetValidMessage>off</SetValidMessage>
-  <ValidMessageAbsolutePosition>on</ValidMessageAbsolutePosition>
+  
+  
   <ValidMessage/>
   <ValidMessagePosition>right</ValidMessagePosition>
   <ValidCSSClass/>
@@ -721,69 +696,36 @@ function easycontactforms_install_data() {
   <WidthUnit>px</WidthUnit>
   
   <HeightUnit>px</HeightUnit>
-<Label><![CDATA[Your request]]></Label><Description><![CDATA[Please provide us with your request details]]></Description><DescriptionPosition><![CDATA[top]]></DescriptionPosition><Required><![CDATA[on]]></Required><SetSize><![CDATA[on]]></SetSize><LabelPosition><![CDATA[top-align-left]]></LabelPosition><ShowDescription><![CDATA[off]]></ShowDescription><Height><![CDATA[150]]></Height><Width><![CDATA[360]]></Width><ShowLabel><![CDATA[on]]></ShowLabel><SetContactOptions>off</SetContactOptions><SetStyle><![CDATA[off]]></SetStyle></form>',
-			'Template' => '<field>
-      <ShowLabel position="top"><![CDATA[
-   <label for=\'ufo-field-id-648\'  style=\'text-align:left\'>
-     Your request         <span class=\'ufo-customfields-required-suffix\'>
-           *         </span>
-            </label>]]></ShowLabel>
-          <RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-648-invalid\'  style=\'display:none\'></div>]]></RequiredMessage>
-          <Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-648","form":"ufo-form-id-2"});</script>]]></Validation>
-    <Input  width="360px"><![CDATA[<textarea id=\'ufo-field-id-648\' name=\'id-648\'  style=\'height:150px;width:360px\'>{id-648}</textarea>]]></Input>
-</field>',
-			'ListPosition' => 660,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
+<Label><![CDATA[Your request]]></Label><Description><![CDATA[Please provide us with your request details]]></Description><DescriptionPosition><![CDATA[top]]></DescriptionPosition><Required><![CDATA[on]]></Required><SetSize><![CDATA[on]]></SetSize><LabelPosition><![CDATA[top-align-left]]></LabelPosition><ShowDescription><![CDATA[off]]></ShowDescription><Width><![CDATA[360]]></Width><ShowLabel><![CDATA[on]]></ShowLabel><SetContactOptions>off</SetContactOptions><SetStyle><![CDATA[off]]></SetStyle><Height><![CDATA[100]]></Height><SetValidMessage><![CDATA[off]]></SetValidMessage><ValidMessageAbsolutePosition><![CDATA[off]]></ValidMessageAbsolutePosition></form>',
+			'Template' => '<field><ShowLabel position="top"><![CDATA[<label for=\'ufo-field-id-3321\'  style=\'text-align:left\'>Your request<span class=\'ufo-customfields-required-suffix\'>*</span></label>]]></ShowLabel><RequiredMessage position="right"><![CDATA[<div id=\'ufo-field-id-3321-invalid\'  style=\'display:none\'></div>]]></RequiredMessage><Validation><![CDATA[<script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3321","form":"ufo-form-id-1"});</script>]]></Validation><Input  width="360px"><![CDATA[<textarea id=\'ufo-field-id-3321\' name=\'id-3321\'  style=\'height:100px;width:360px\'>{id-3321}</textarea>]]></Input></field>',
+			'ListPosition' => 3321,
+			'CustomForms' => 1,
+			'FieldSet' => 3316,
 		),
 		array(
-			'id' => 659,
-			'Description' => 'Last Name',
-			'Type' => 14,
-			'Settings' => '<?xml version="1.0"?>
-<form><LabelPosition>left-align-left</LabelPosition><Advanced/><LabelCSSClass/><LabelCSSStyle/><ShowDescription>off</ShowDescription><Description/><DescriptionPosition>bottom</DescriptionPosition><DescriptionCSSClass>ufo-customfields-field-description</DescriptionCSSClass><DescriptionCSSStyle/><SetDefaultValue>off</SetDefaultValue><DefaultValue/><IsBlankValue>on</IsBlankValue><DefaultValueCSSClass/><Required>off</Required><RequiredMessage>This field is required</RequiredMessage><RequiredMessagePosition>right</RequiredMessagePosition><SetRequiredSuffix>on</SetRequiredSuffix><RequiredSuffix>*</RequiredSuffix><RequiredSuffixCSSClass>ufo-customfields-required-suffix</RequiredSuffixCSSClass><RequiredSuffixCSSStyle/><AbsolutePosition>on</AbsolutePosition><InvalidCSSClass/><RequiredMessageCSSClass/><RequiredMessageCSSStyle/><Validate>off</Validate><MinLength/><MaxLength/><SetValidMessage>off</SetValidMessage><ValidMessageAbsolutePosition>on</ValidMessageAbsolutePosition><ValidMessage/><ValidMessagePosition>right</ValidMessagePosition><ValidCSSClass/><ValidCSSStyle/><SetStyle>off</SetStyle><CSSClass/><CSSStyle/><RowCSSClass/><SetSize>off</SetSize><Width>230</Width><WidthUnit>px</WidthUnit><Label><![CDATA[Last Name]]></Label><ShowLabel><![CDATA[on]]></ShowLabel></form>',
-			'Template' => '<field>
-      <ShowLabel position="left"><![CDATA[
-   <label for=\'ufo-field-id-659\'  style=\'text-align:left\'>
-     Last Name   </label>]]></ShowLabel>
-            <Input ><![CDATA[<input type=\'text\' id=\'ufo-field-id-659\' value=\'{id-659}\' name=\'id-659\' >]]></Input>
-</field>',
-			'ListPosition' => 639,
-			'CustomForms' => 2,
-			'FieldSet' => 622,
-		),
-		array(
-			'id' => 675,
-			'Description' => 'Please fill in the fields below',
-			'Type' => 2,
+			'id' => 3322,
+			'Description' => 'Submit',
+			'Type' => 6,
 			'Settings' => '<?xml version="1.0"?>
 <form>
   
   
-  <LabelTagName>h3</LabelTagName>
+  
   <Advanced/>
   <LabelCSSClass/>
   <LabelCSSStyle/>
-  <ShowDescription>off</ShowDescription>
-  <Description/>
-  <DescriptionPosition>top</DescriptionPosition>
-  <DescriptionCSSClass>ufo-customfields-container-description</DescriptionCSSClass>
-  <DescriptionCSSStyle/>
   <SetStyle>off</SetStyle>
   <CSSClass/>
   <CSSStyle/>
-  <AddCF>off</AddCF>
-  <SetSize>off</SetSize>
-  <Width>230</Width>
+  <RowCSSClass/>
+  
+  <Width>100</Width>
   <WidthUnit>px</WidthUnit>
-<ShowLabel><![CDATA[off]]></ShowLabel><Label><![CDATA[Please fill in the fields below]]></Label></form>',
-			'Template' => '<field>
-    <Container containertag="div" addcf="off"><![CDATA[<div>
-     ]]></Container>
-</field>',
-			'ListPosition' => 624,
-			'CustomForms' => 2,
-			'FieldSet' => 675,
+<InputPosition><![CDATA[left]]></InputPosition><ShowLabel><![CDATA[on]]></ShowLabel><SetSize><![CDATA[off]]></SetSize><Label><![CDATA[Submit]]></Label></form>',
+			'Template' => '<field><Validation><![CDATA[<script type=\'text/javascript\'>var c = {};c.id = \'ufo-field-id-3322\';c.form = \'ufo-form-id-1\';c.Label = \'Submit\';ufoFormsConfig.submits.push(c);</script>]]></Validation><Input><![CDATA[<span id=\'ufo-field-id-3322-span\'><noscript><button type=\'submit\' id=\'ufo-field-id-3322\' name=\'id-3322\' >Submit</button></noscript></span>]]></Input></field>',
+			'ListPosition' => 3322,
+			'CustomForms' => 1,
+			'FieldSet' => 3316,
 		),
 	);
 
@@ -791,6 +733,98 @@ function easycontactforms_install_data() {
 	$count = $wpdb->get_var( 'SELECT COUNT(*) FROM ' . $table_name . ';' );
 	if ($count == 0) {
 		foreach ($rows as $row) {
+			$wpdb->insert($table_name, $row);
+		}
+	}
+
+
+	$rows = array(
+		array(
+			'id' => 1,
+			'Description' => 'Simple contact form',
+			'NotificationSubject' => 'New request received',
+			'SendFrom' => 'Champion Forms',
+			'SendConfirmation' => 0,
+			'ConfirmationSubject' => 'We have received your request',
+			'Redirect' => 0,
+			'ShortCode' => '[easy_contact_forms fid=1]',
+			'Template' => 0,
+			'ObjectOwner' => 286,
+			'SubmissionSuccessText' => 'Thank you for contacting us! We are glad to hear from you.',
+			'HTML' => '<script type=\'text/javascript\'>if (typeof(ecfconfig) == \'undefined\'){var ecfconfig={};}ecfconfig[1]={};var ufobaseurl =  \'http://localhost/wordpress-3.3/wp-admin/admin-ajax.php\';if (typeof(ufoFormsConfig) == \'undefined\') {var ufoFormsConfig = {};ufoFormsConfig.submits = [];ufoFormsConfig.resets = [];ufoFormsConfig.validations = [];}ufoFormsConfig.phonenumberre = /^(\+{0,1}\d{1,2})*\s*(\(?\d{3}\)?\s*)*\d{3}(-{0,1}|\s{0,1})\d{2}(-{0,1}|\s{0,1})\d{2}$/;</script><link href=\'http://localhost/wordpress-3.3/wp-content/plugins/easy-contact-forms/forms/styles/easyform/css/std.css?ver=1.4.9\' rel=\'stylesheet\' type=\'text/css\'/><div class=\'ufo-form\' id=\'ufo-form-id-1\'><noscript><form method=\'post\'><input type=\'hidden\' name=\'cf-no-script\' value=\'1\'/></noscript><input type=\'hidden\' value=\'ufo-form-id-1\' name=\'hidden-1\' id=\'ufo-form-hidden-1\'/><input type=\'hidden\' value=\'{__pagename}\' name=\'ufo-form-pagename\' id=\'ufo-form-pagename\'/>{preview}<input type=\'hidden\' value=\'{ufosignature}\' name=\'ufo-sign\' id=\'ufo-sign\'/><div></div><div>
+     <div class=\'ufo-fieldtype-4 ufo-customform-row ufo-row-3318\' style=\'margin-top:2px;{display-3318}\'><div class=\'ufo-cell-3318-2-row\' id=\'ufo-cell-3318-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-3318-2-left\'><label for=\'ufo-field-id-3318\'  style=\'text-align:left\'>First name<span class=\'ufo-customfields-required-suffix\'>*</span></label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-3318-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3318","form":"ufo-form-id-1"});</script><input type=\'text\' id=\'ufo-field-id-3318\' value=\'{id-3318}\' name=\'id-3318\' /></span><span class=\'ufo-cell-right\' id=\'ufo-cell-3318-2-right\'><div id=\'ufo-field-id-3318-invalid\'  style=\'display:none\'></div></span></div></div><div class=\'ufo-fieldtype-4 ufo-customform-row ufo-row-3319\' style=\'margin-top:2px;{display-3319}\'><div class=\'ufo-cell-3319-2-row\' id=\'ufo-cell-3319-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-3319-2-left\'><label for=\'ufo-field-id-3319\'  style=\'text-align:left\'>Last name<span class=\'ufo-customfields-required-suffix\'>*</span></label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-3319-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3319","form":"ufo-form-id-1"});</script><input type=\'text\' id=\'ufo-field-id-3319\' value=\'{id-3319}\' name=\'id-3319\' /></span><span class=\'ufo-cell-right\' id=\'ufo-cell-3319-2-right\'><div id=\'ufo-field-id-3319-invalid\'  style=\'display:none\'></div></span></div></div><div class=\'ufo-fieldtype-5 ufo-customform-row ufo-row-3320\' style=\'margin-top:2px;{display-3320}\'><div class=\'ufo-cell-3320-2-row\' id=\'ufo-cell-3320-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-3320-2-left\'><label for=\'ufo-field-id-3320\'  style=\'text-align:left\'>Email<span class=\'ufo-customfields-required-suffix\'>*</span></label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-3320-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","email"]},"Required":true,"Validate":true,"RequiredMessage":"Please enter you email","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3320","form":"ufo-form-id-1"});</script><input type=\'text\' id=\'ufo-field-id-3320\' value=\'{id-3320}\' name=\'id-3320\' /></span><span class=\'ufo-cell-right\' id=\'ufo-cell-3320-2-right\'><div id=\'ufo-field-id-3320-invalid\'  style=\'display:none\'></div></span></div></div><div class=\'ufo-fieldtype-10 ufo-customform-row ufo-row-3321\' style=\'margin-top:2px;{display-3321}\'><div class=\'ufo-cell-3321-1-row\' id=\'ufo-cell-3321-1\'><span class=\'ufo-cell-center\' style=\'width:360px\' id=\'ufo-cell-3321-1-center\'><label for=\'ufo-field-id-3321\'  style=\'text-align:left\'>Your request<span class=\'ufo-customfields-required-suffix\'>*</span></label></span><span class=\'ufo-cell-right\' id=\'ufo-cell-3321-1-right\'><p style=\'display:none\'></p></span></div><div class=\'ufo-cell-3321-2-row\' id=\'ufo-cell-3321-2\'><span class=\'ufo-cell-center\' style=\'width:360px\' id=\'ufo-cell-3321-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-3321","form":"ufo-form-id-1"});</script><textarea id=\'ufo-field-id-3321\' name=\'id-3321\'  style=\'height:100px;width:360px\'>{id-3321}</textarea></span><span class=\'ufo-cell-right\' id=\'ufo-cell-3321-2-right\'><div id=\'ufo-field-id-3321-invalid\'  style=\'display:none\'></div></span></div></div><div class=\'ufo-fieldtype-6 ufo-customform-row ufo-row-3322\' style=\'margin-top:2px;{display-3322}\'><div class=\'ufo-cell-3322-2-row\' id=\'ufo-cell-3322-2\'><span class=\'ufo-cell-center\' id=\'ufo-cell-3322-2-center\'><script type=\'text/javascript\'>var c = {};c.id = \'ufo-field-id-3322\';c.form = \'ufo-form-id-1\';c.Label = \'Submit\';ufoFormsConfig.submits.push(c);</script><span id=\'ufo-field-id-3322-span\'><noscript><button type=\'submit\' id=\'ufo-field-id-3322\' name=\'id-3322\' >Submit</button></noscript></span></span></div></div></div><div id=\'ufo-form-id-1-message\'></div><noscript></form></noscript></div>',
+			'ShowSubmissionSuccess' => 1,
+			'WidthUnit' => 'px',
+			'LineHeight' => 2,
+			'LineHeightUnit' => 'px',
+			'Style' => 'easyform',
+			'TotalEntries' => 2,
+			'IncludeVisitorsAddressInReplyTo' => 0,
+			'SendConfirmationAsText' => 0,
+			'SendNotificationAsText' => 0,
+			'IncludeIntoReporting' => 1,
+		),
+	);
+
+	$table_name = EasyContactFormsDB::wptn('#wp__easycontactforms_customforms');
+	$count = $wpdb->get_var( 'SELECT COUNT(*) FROM ' . $table_name . ';' );
+	if ($count == 0) {
+		foreach ($rows as $row) {
+			$wpdb->insert($table_name, $row);
+		}
+	}
+
+
+	$rows = array(
+		array(
+			'id' => 1,
+			'Description' => '2012-01-25',
+			'OptionGroup' => 'dateformats',
+			'Value' => 'Y-m-d^%Y-%m-%d^\d{4}-\d{2}-\d{2}$^2012-01-25',
+		),
+		array(
+			'id' => 2,
+			'Description' => 'Y-m-d hh:mm',
+			'OptionGroup' => 'datetimeformats',
+			'Value' => 'Y-m-d H:i^%Y-%m-%d %H:%M^\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2}^Y-m-d hh:mm',
+		),
+		array(
+			'id' => 3,
+			'Description' => '01/25/2012',
+			'OptionGroup' => 'dateformats',
+			'Value' => 'm/d/Y^%m/%d/%Y^\d{2}\/\d{2}\/\d{4}$^01/25/2012',
+		),
+		array(
+			'id' => 4,
+			'Description' => 'd.m.Y hh:mm',
+			'OptionGroup' => 'datetimeformats',
+			'Value' => 'd.m.Y H:i^%d.%m.%Y %H:%M^\d{1,2}\.\d{1,2}\.\d{4}\s\d{1,2}:\d{1,2}^d.m.Y hh:mm',
+		),
+		array(
+			'id' => 5,
+			'Description' => '25/01/2012',
+			'OptionGroup' => 'dateformats',
+			'Value' => 'd/m/Y^%d/%m/%Y^\d{2}\/\d{2}\/\d{4}$^25/01/2012',
+		),
+		array(
+			'id' => 6,
+			'Description' => '25.01.2012',
+			'OptionGroup' => 'dateformats',
+			'Value' => 'd.m.Y^%d.%m.%Y^\d{2}\.\d{2}\.\d{4}$^25.01.2012',
+		),
+		array(
+			'id' => 7,
+			'Description' => '25-01-2012',
+			'OptionGroup' => 'dateformats',
+			'Value' => 'd-m-Y^%d-%m-%Y^\d{2}-\d{2}-\d{4}$^25-01-2012',
+		),
+	);
+
+	$table_name = EasyContactFormsDB::wptn('#wp__easycontactforms_options');
+	$existent = $wpdb->get_col( 'SELECT Description FROM ' . $table_name . ';' );
+	foreach ($rows as $row) {
+		$rid = $row['Description'];
+		if (!in_array($rid, $existent)) {
 			$wpdb->insert($table_name, $row);
 		}
 	}
@@ -978,16 +1012,16 @@ function easycontactforms_install_data() {
 			'role' => 'SuperAdmin',
 		),
 		array(
-			'objtype' => 'CustomFormFields',
-			'method' => 'getSettingsForm',
-			'name' => 'main',
-			'role' => 'Owner',
-		),
-		array(
 			'objtype' => 'OrderStatuses',
 			'method' => 'new',
 			'name' => 'main',
 			'role' => 'SuperAdmin',
+		),
+		array(
+			'objtype' => 'CustomFormFields',
+			'method' => 'getSettingsForm',
+			'name' => 'main',
+			'role' => 'Owner',
 		),
 		array(
 			'objtype' => 'Tasks',
@@ -1114,6 +1148,12 @@ function easycontactforms_install_data() {
 			'method' => 'show',
 			'name' => 'main',
 			'role' => 'Owner',
+		),
+		array(
+			'objtype' => 'CustomForms',
+			'method' => 'installTemplate',
+			'name' => 'main',
+			'role' => 'SuperAdmin',
 		),
 		array(
 			'objtype' => 'CustomForms_MailingLists',
@@ -1260,6 +1300,12 @@ function easycontactforms_install_data() {
 			'role' => 'SuperAdmin',
 		),
 		array(
+			'objtype' => 'CustomForms',
+			'method' => 'installTemplate',
+			'name' => 'main',
+			'role' => 'Owner',
+		),
+		array(
 			'objtype' => 'CustomFormFields',
 			'method' => 'view',
 			'name' => 'main',
@@ -1344,14 +1390,14 @@ function easycontactforms_install_data() {
 			'role' => 'SuperAdmin',
 		),
 		array(
-			'objtype' => 'CustomFormFields',
-			'method' => 'getSettingsForm',
+			'objtype' => 'Users',
+			'method' => 'getEUserASList',
 			'name' => 'main',
 			'role' => 'SuperAdmin',
 		),
 		array(
-			'objtype' => 'Users',
-			'method' => 'getEUserASList',
+			'objtype' => 'CustomFormFields',
+			'method' => 'getSettingsForm',
 			'name' => 'main',
 			'role' => 'SuperAdmin',
 		),
@@ -1890,6 +1936,12 @@ function easycontactforms_install_data() {
 			'role' => 'SuperAdmin',
 		),
 		array(
+			'objtype' => 'CustomForms',
+			'method' => 'getAvailableTemplates',
+			'name' => 'main',
+			'role' => 'SuperAdmin',
+		),
+		array(
 			'objtype' => 'Users',
 			'method' => 'new',
 			'name' => 'main',
@@ -1964,6 +2016,12 @@ function easycontactforms_install_data() {
 		array(
 			'objtype' => 'ApplicationSettings',
 			'method' => 'setOptionValue',
+			'name' => 'main',
+			'role' => 'Owner',
+		),
+		array(
+			'objtype' => 'CustomForms',
+			'method' => 'getAvailableTemplates',
 			'name' => 'main',
 			'role' => 'Owner',
 		),
@@ -2164,165 +2222,6 @@ function easycontactforms_install_data() {
 
 	$rows = array(
 		array(
-			'id' => 2,
-			'Description' => 'Contact form',
-			'NotificationSubject' => 'New request received',
-			'SendFrom' => 'Champion Forms',
-			'SendConfirmation' => 0,
-			'ConfirmationSubject' => 'We have received your request',
-			'ConfirmationText' => '<p><span style="font-size:x-small;">Dear&nbsp;{659.LastName},</span></p>
-<p><span style="font-size:x-small;">We have received your request</span></span></p>
-<div style="font-family:helvetica;">
-  <table style="max-width:600px;border-collapse:collapse;">
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">First name</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{627.Firstname}</span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">Last name</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{647.Lastname}</span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">Email</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{625.Email}</span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">Your request</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{648.Yourrequest}</span></td>
-    </tr>
-  </table>
-</div>
-<p class="messagetext"><span style="font-size:x-small;">Someone from our team should be in touch with you soon.</span></p>',
-			'Redirect' => 0,
-			'ShortCode' => '[easy_contact_forms fid=2]',
-			'Template' => 0,
-			'ObjectOwner' => 286,
-			'SubmissionSuccessText' => 'Thank you for contacting us! We are glad to hear from you.',
-			'HTML' => '<script type=\'text/javascript\'>if (typeof(ecfconfig) == \'undefined\'){var ecfconfig={};}ecfconfig[2]={};var ufobaseurl =  \'/wp-admin/admin-ajax.php\';if (typeof(ufoFormsConfig) == \'undefined\') {var ufoFormsConfig = {};ufoFormsConfig.submits = [];ufoFormsConfig.resets = [];ufoFormsConfig.validations = [];}</script><link href=\'/wp-content/plugins/champion-forms/forms/styles/easyform/css/std.css?ver=1.5.5\' rel=\'stylesheet\' type=\'text/css\'/><style type=\'text/css\'>.ufo-row-659{display:none;}</style><div class=\'ufo-form\' id=\'ufo-form-id-2\'><noscript><form method=\'post\'><input type=\'hidden\' name=\'cf-no-script\' value=\'1\'/></noscript><input type=\'hidden\' value=\'ufo-form-id-2\' name=\'hidden-2\' id=\'ufo-form-hidden-2\'/><input type=\'hidden\' value=\'{__pagename}\' name=\'ufo-form-pagename\' id=\'ufo-form-pagename\'/>{preview}<input type=\'hidden\' value=\'{ufosignature}\' name=\'ufo-sign\' id=\'ufo-sign\'/><div>
-     </div><div>
-     <div class=\'ufo-fieldtype-14 ufo-customform-row ufo-row-659\' style=\'margin-top:2px;{display-659}\'><div class=\'ufo-cell-659-2-row\' id=\'ufo-cell-659-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-659-2-left\'>
-   <label for=\'ufo-field-id-659\'  style=\'text-align:left\'>
-     Last Name   </label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-659-2-center\'><input type=\'text\' id=\'ufo-field-id-659\' value=\'{id-659}\' name=\'id-659\' ></span></div></div><div class=\'ufo-fieldtype-4 ufo-customform-row ufo-row-627\' style=\'margin-top:2px;{display-627}\'><div class=\'ufo-cell-627-2-row\' id=\'ufo-cell-627-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-627-2-left\'>
-   <label for=\'ufo-field-id-627\'  style=\'text-align:left\'>
-     First name         <span class=\'ufo-customfields-required-suffix\'>
-           *         </span>
-            </label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-627-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","minmax"]},"Required":true,"Validate":true,"showValid":true,"ValidMessageAbsolutePosition":true,"ValidMessagePosition":"right","RequiredMessage":"Your first name is required (from 2 to 45 characters)","AbsolutePosition":true,"RequiredMessagePosition":"right","min":"2","max":"45","id":"ufo-field-id-627","form":"ufo-form-id-2"});</script><input type=\'text\' id=\'ufo-field-id-627\' value=\'{id-627}\' name=\'id-627\' ></span><span class=\'ufo-cell-right\' id=\'ufo-cell-627-2-right\'><div id=\'ufo-field-id-627-invalid\'  style=\'display:none\'></div><div id=\'ufo-field-id-627-valid\'  style=\'display:none\'>
-        </div></span></div></div><div class=\'ufo-fieldtype-4 ufo-customform-row ufo-row-647\' style=\'margin-top:2px;{display-647}\'><div class=\'ufo-cell-647-2-row\' id=\'ufo-cell-647-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-647-2-left\'>
-   <label for=\'ufo-field-id-647\'  style=\'text-align:left\'>
-     Last name         <span class=\'ufo-customfields-required-suffix\'>
-           *         </span>
-            </label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-647-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","minmax"]},"Required":true,"Validate":true,"showValid":true,"ValidMessageAbsolutePosition":true,"ValidMessagePosition":"right","RequiredMessage":"Your last name is required (from 2 to 45 characters)","AbsolutePosition":true,"RequiredMessagePosition":"right","min":"2","max":"45","id":"ufo-field-id-647","form":"ufo-form-id-2"});</script><input type=\'text\' id=\'ufo-field-id-647\' value=\'{id-647}\' name=\'id-647\' ></span><span class=\'ufo-cell-right\' id=\'ufo-cell-647-2-right\'><div id=\'ufo-field-id-647-invalid\'  style=\'display:none\'></div><div id=\'ufo-field-id-647-valid\'  style=\'display:none\'>
-        </div></span></div></div><div class=\'ufo-fieldtype-5 ufo-customform-row ufo-row-625\' style=\'margin-top:2px;{display-625}\'><div class=\'ufo-cell-625-2-row\' id=\'ufo-cell-625-2\'><span class=\'ufo-cell-left\' id=\'ufo-cell-625-2-left\'><label for=\'ufo-field-id-625\'  style=\'text-align:left\'>Email<span class=\'ufo-customfields-required-suffix\'>*</span></label></span><span class=\'ufo-cell-center\' id=\'ufo-cell-625-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required","email"]},"Required":true,"Validate":true,"showValid":true,"ValidMessageAbsolutePosition":true,"ValidMessagePosition":"right","RequiredMessage":"Please enter you email","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-625","form":"ufo-form-id-2"});</script><input type=\'text\' id=\'ufo-field-id-625\' value=\'{id-625}\' name=\'id-625\' ></span><span class=\'ufo-cell-right\' id=\'ufo-cell-625-2-right\'><div id=\'ufo-field-id-625-invalid\'  style=\'display:none\'></div><div id=\'ufo-field-id-625-valid\'  style=\'display:none\'></div></span></div></div><div class=\'ufo-fieldtype-10 ufo-customform-row ufo-row-648\' style=\'margin-top:2px;{display-648}\'><div class=\'ufo-cell-648-1-row\' id=\'ufo-cell-648-1\'><span class=\'ufo-cell-center\' style=\'width:360px\' id=\'ufo-cell-648-1-center\'>
-   <label for=\'ufo-field-id-648\'  style=\'text-align:left\'>
-     Your request         <span class=\'ufo-customfields-required-suffix\'>
-           *         </span>
-            </label></span><span class=\'ufo-cell-right\' id=\'ufo-cell-648-1-right\'><p style=\'display:none\'></p></span></div><div class=\'ufo-cell-648-2-row\' id=\'ufo-cell-648-2\'><span class=\'ufo-cell-center\' style=\'width:360px\' id=\'ufo-cell-648-2-center\'><script type=\'text/javascript\'>ufoFormsConfig.validations.push({"events":{"blur":["required"]},"Required":true,"RequiredMessage":"This field is required","AbsolutePosition":true,"RequiredMessagePosition":"right","id":"ufo-field-id-648","form":"ufo-form-id-2"});</script><textarea id=\'ufo-field-id-648\' name=\'id-648\'  style=\'height:150px;width:360px\'>{id-648}</textarea></span><span class=\'ufo-cell-right\' id=\'ufo-cell-648-2-right\'><div id=\'ufo-field-id-648-invalid\'  style=\'display:none\'></div></span></div></div><div class=\'ufo-fieldtype-6 ufo-customform-row ufo-row-630\' style=\'margin-top:2px;{display-630}\'><div class=\'ufo-cell-630-2-row\' id=\'ufo-cell-630-2\'><span class=\'ufo-cell-center\' id=\'ufo-cell-630-2-center\'><script type=\'text/javascript\'>var c = {};c.id = \'ufo-field-id-630\';c.form = \'ufo-form-id-2\';c.Label = \'Submit\';ufoFormsConfig.submits.push(c);</script><span id=\'ufo-field-id-630-span\'>
-                 <noscript>
-          <button type=\'submit\' id=\'ufo-field-id-630\' name=\'id-630\' >
-       Submit     </button>
-            </noscript>
-        </span></span></div></div></div><div id=\'ufo-form-id-2-message\'></div><noscript></form></noscript></div>',
-			'ShowSubmissionSuccess' => 1,
-			'WidthUnit' => 'px',
-			'LineHeight' => 2,
-			'LineHeightUnit' => 'px',
-			'Style' => 'easyform',
-			'Impressions' => 1,
-			'NotificationText' => '<p><span style="font-size:x-small;">A new message from&nbsp;{659.LastName},</span></p>
-<div style="font-family:helvetica;">
-  <table style="max-width:600px;border-collapse:collapse;">
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">First name</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{627.Firstname}</span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">Last name</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{647.Lastname}</span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">Email</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{625.Email}</span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;font-weight:bold;">Your request</span></td>
-      <td style="vertical-align:top;border-bottom:1px solid #ddd;padding:6px;"><span style="font-size:x-small;">{648.Yourrequest}</span></td>
-    </tr>
-  </table>
-</div>',
-			'IncludeVisitorsAddressInReplyTo' => 1,
-			'ReplyToNameTemplate' => '{627.Firstname} {647.Lastname}',
-			'SendConfirmationAsText' => 0,
-			'SendNotificationAsText' => 0,
-			'IncludeIntoReporting' => 1,
-		),
-	);
-
-	$table_name = EasyContactFormsDB::wptn('#wp__easycontactforms_customforms');
-	$count = $wpdb->get_var( 'SELECT COUNT(*) FROM ' . $table_name . ';' );
-	if ($count == 0) {
-		foreach ($rows as $row) {
-			$wpdb->insert($table_name, $row);
-		}
-	}
-
-
-	$rows = array(
-		array(
-			'id' => 1,
-			'Description' => '2012-01-25',
-			'OptionGroup' => 'dateformats',
-			'Value' => 'Y-m-d^%Y-%m-%d^\d{4}-\d{2}-\d{2}$^2012-01-25',
-		),
-		array(
-			'id' => 2,
-			'Description' => 'Y-m-d hh:mm',
-			'OptionGroup' => 'datetimeformats',
-			'Value' => 'Y-m-d H:i^%Y-%m-%d %H:%M^\d{4}-\d{1,2}-\d{1,2}\s\d{1,2}:\d{1,2}^Y-m-d hh:mm',
-		),
-		array(
-			'id' => 3,
-			'Description' => '01/25/2012',
-			'OptionGroup' => 'dateformats',
-			'Value' => 'm/d/Y^%m/%d/%Y^\d{2}\/\d{2}\/\d{4}$^01/25/2012',
-		),
-		array(
-			'id' => 4,
-			'Description' => 'd.m.Y hh:mm',
-			'OptionGroup' => 'datetimeformats',
-			'Value' => 'd.m.Y H:i^%d.%m.%Y %H:%M^\d{1,2}\.\d{1,2}\.\d{4}\s\d{1,2}:\d{1,2}^d.m.Y hh:mm',
-		),
-		array(
-			'id' => 5,
-			'Description' => '25/01/2012',
-			'OptionGroup' => 'dateformats',
-			'Value' => 'd/m/Y^%d/%m/%Y^\d{2}\/\d{2}\/\d{4}$^25/01/2012',
-		),
-		array(
-			'id' => 6,
-			'Description' => '25.01.2012',
-			'OptionGroup' => 'dateformats',
-			'Value' => 'd.m.Y^%d.%m.%Y^\d{2}\.\d{2}\.\d{4}$^25.01.2012',
-		),
-		array(
-			'id' => 7,
-			'Description' => '25-01-2012',
-			'OptionGroup' => 'dateformats',
-			'Value' => 'd-m-Y^%d-%m-%Y^\d{2}-\d{2}-\d{4}$^25-01-2012',
-		),
-	);
-
-	$table_name = EasyContactFormsDB::wptn('#wp__easycontactforms_options');
-	$existent = $wpdb->get_col( 'SELECT Description FROM ' . $table_name . ';' );
-	foreach ($rows as $row) {
-		$rid = $row['Description'];
-		if (!in_array($rid, $existent)) {
-			$wpdb->insert($table_name, $row);
-		}
-	}
-
-
-	$rows = array(
-		array(
 			'id' => 1,
 			'Description' => 'Client',
 			'Notes' => 'Aliquam euismod tincidunt velit, in lobortis velit aliquam id. Morbi risus eros, fringilla et blandit at, semper sit amet magna.',
@@ -2501,7 +2400,7 @@ function easycontactforms_install_data() {
 			'FileFolder' => 'files',
 			'FixJSLoading' => 0,
 			'FixStatus0' => 0,
-			'ProductVersion' => '1.4.8',
+			'ProductVersion' => '1.4.9',
 			'InitTime' => 0,
 			'ShowPoweredBy' => 0,
 			'DateFormat' => 'Y-m-d^%Y-%m-%d^\d{4}-\d{2}-\d{2}$^2012-01-25',
@@ -2556,7 +2455,7 @@ function easycontactforms_install_data() {
 	require_once dirName(__FILE__) . DIRECTORY_SEPARATOR . 'easy-contact-forms-root.php';
 	require_once dirName(__FILE__) . DIRECTORY_SEPARATOR . 'easy-contact-forms-applicationsettings.php';
 	$as = EasyContactFormsApplicationSettings::getInstance();
-	$as->set('ProductVersion', '1.4.8');
+	$as->set('ProductVersion', '1.4.9');
 	$as->save();}
 
 

@@ -231,6 +231,7 @@ class EasyContactFormsT extends EasyContactFormsStrings {
  var $Conversion2 = 'Conversion 2';
  var $Copy = 'Copy';
  var $Country = 'Country';
+ var $CreateFromTemplate = 'Create from template';
  var $CurrencySymbol = '$';
  var $CustomFieldTemplates = 'Custom field templates';
  var $CustomForm = 'Form';
